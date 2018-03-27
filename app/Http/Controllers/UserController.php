@@ -14,14 +14,16 @@ class UserController extends Controller
             'juan',
             'javier',
         ];
-        return view('users', [
+        return view('users.index', [
             'users'=> $users,
             'title'=> 'Listado de usuarios'
         ]);
     }
 
     public function show($id){
-    return "mostrando detalles del usuario: {$id}";
+    return view('users.show',[
+        'id'=>$id
+    ]);
 
     }
 

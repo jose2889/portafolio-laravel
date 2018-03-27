@@ -1,17 +1,13 @@
-@extends('welcome')
+@extends ('layouts.layout')
 
+@section ('title','probandooo')
 
-@section('title', "Usuario {$id}")
-
-
-@section('content')
-aqui
-    <!-- Contenido de la sección -->
+@section ('contenido')
 <div class="row">
             <div class="col-12 col-md-9">
                 <div class="row mb-5">
                     <div class="col-3">
-                        <img src="images/cards1.png" class="img-fluid" alt="">
+                        <img src="{{asset('images/cards1.png')}}" class="img-fluid" alt="">
                         <p class="lead text-center">fecha</p>
                     </div>
                     <div class="col-9">
@@ -26,7 +22,7 @@ aqui
                 </div>
                 <div class="row mb-5">
                     <div class="col-3">
-                        <img src="images/cards1.png" class="img-fluid" alt="">
+                        <img src="{{asset('images/cards1.png')}}" class="img-fluid" alt="">
                         <p class="lead text-center">fecha</p>
                     </div>
                     <div class="col-9">
@@ -41,7 +37,7 @@ aqui
                 </div>
                 <div class="row mb-5">
                     <div class="col-3">
-                        <img src="images/cards1.png" class="img-fluid" alt="">
+                        <img src="{{asset('images/cards1.png')}}" class="img-fluid" alt="">
                         <p class="lead text-center">fecha</p>
                     </div>
                     <div class="col-9">

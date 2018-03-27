@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('layout');
 });
 
+Route::get('/prueba', function () {
+    return view('lista');
+});
+
 Route::get('/usuarios', 'UserController@index');
 
 Route::get('/usuarios/{id}', 'UserController@show')
