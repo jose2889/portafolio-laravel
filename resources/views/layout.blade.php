@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="{{route('users')}}">Usuarios</a>
                     <a class="nav-item nav-link" href="#">Pricing</a>
                     <a class="nav-item nav-link mr-lg-4" href="#">Disabled</a>
                     <div><a href="#" class="btn btn-danger">Contacto</a></div>

@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+    protected $table = "users";
     use Notifiable;
 
     /**
@@ -26,4 +27,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function isAdmin(){
+
+        return $this->email === 'jose2889@gmail.com';
+    }
+
+    public static function buscarPorCorreo($correo){
+
+        return static::where('email',$correo)->first();
+    }
 }
