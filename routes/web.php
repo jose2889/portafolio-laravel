@@ -28,5 +28,9 @@ Route::get('/usuarios/nuevo', 'UserController@create')->name('users.create');
 
 Route::post('/usuarios', 'UserController@store');
     
+Route::get('/usuarios/editar', 'UserController@edit')->name('users.edit');
+
+Route::delete('/usuarios/{user}', 'UserController@destroy')->name('users.delete');
+
 Route::get('/saludo/{name}/{nickname?}', 'WelcomeUserController')->name('saludar');
     
